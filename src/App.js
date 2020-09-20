@@ -28,7 +28,7 @@ export default function App() {
     const likedRepository = response.data;
 
     //Respeitando o conceito de imutabilidade de React
-    // o map não modifica o tamanho do array
+    //O map não modifica o tamanho do array
     const respositoriesUpdated = repositories.map(repository => {
         if(repository.id == id){
           return likedRepository;
